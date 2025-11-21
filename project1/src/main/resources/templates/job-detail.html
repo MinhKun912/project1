@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết công việc</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1 th:text="${job.title}"></h1>
+<p><strong>Công ty:</strong> <span th:text="${job.company}"></span></p>
+<p><strong>Địa điểm:</strong> <span th:text="${job.location}"></span></p>
+<p><strong>Lương:</strong> <span th:text="${job.salary}"></span></p>
+
+<h3>Mô tả công việc</h3>
+<p th:text="${job.description}"></p>
+
+<a href="/">← Quay lại</a>
+
+</body>
+</html>

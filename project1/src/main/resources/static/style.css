@@ -1,0 +1,25 @@
+body {
+    width: 60%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+button, .btn {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.job-list li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

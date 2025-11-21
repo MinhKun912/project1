@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Tìm kiếm việc làm</h1>
+
+<form method="get" action="/">
+    <input type="text" name="keyword" placeholder="Nhập tên công việc...">
+    <button type="submit">Tìm kiếm</button>
+</form>
+
+<a href="/post" class="btn">Đăng tin tuyển dụng</a>
+
+<div class="job-list">
+    <ul>
+        <th:block th:each="job : ${jobs}">
+            <li>
+                <a th:href="@{/job/{id}(id=${job.id})}">
+                    <h3 th:text="${job.title}"></h3>
+                    <p th:text="${job.company}"></p>
+                    <p th:text="${job.location}"></p>
+                </a>
+            </li>
+        </th:block>
+    </ul>
+</div>
+</body>
+</html>
